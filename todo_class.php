@@ -15,7 +15,7 @@ class Employee{
         if(preg_match("/^[a-zA-Z0-9\-\_]+$/",$uname)){
             if(preg_match("/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i",$email)){
                 $ext=pathinfo($fn,PATHINFO_EXTENSION);
-                $fname="$uname.$ext";
+                $fname=rand().".$ext";
                 if(mysqli_query($this->conn,"INSERT INTO employee(uname,email,name,age,city,image) VALUES('$uname','$email','$name',$age,'$city','$fname');")){
                     if(move_uploaded_file($temp,"images/$fname")){
                         header('Refresh:2;URL=details.php');
