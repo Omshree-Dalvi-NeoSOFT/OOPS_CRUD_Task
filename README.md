@@ -2,6 +2,8 @@
 
  
 Create a Todolist with OOPs and Database 
+
+
  Add Employee 
      Uname 
      Email 
@@ -10,9 +12,9 @@ Create a Todolist with OOPs and Database
      City
      Image 
          Submit 
-  Employee Listing 
-     S.no Uname Email NAme Age City   Image    Action 
-     1    A      A     A    23  Noida display  Edit Delete 
+         
+         
+  Employee Listing  
        *** Proper Validation 
 
        *** Todo database 
